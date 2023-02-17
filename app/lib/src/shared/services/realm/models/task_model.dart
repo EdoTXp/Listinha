@@ -16,5 +16,5 @@ class _TaskBoard {
   late Uuid id;
   late String title;
   late List<_Task> tasks;
-  bool isEnable = false;
+  bool isEnable = true;
 }

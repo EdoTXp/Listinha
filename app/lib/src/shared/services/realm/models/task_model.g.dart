@@ -71,12 +71,12 @@ class TaskBoard extends _TaskBoard
   TaskBoard(
     Uuid id,
     String title, {
-    bool isEnable = false,
+    bool isEnable = true,
     Iterable<Task> tasks = const [],
   }) {
     if (!_defaultsSet) {
       _defaultsSet = RealmObjectBase.setDefaults<TaskBoard>({
-        'isEnable': false,
+        'isEnable': true,
       });
     }
     RealmObjectBase.set(this, 'id', id);
